@@ -4,8 +4,14 @@ wget -O - https://raw.githubusercontent.com/Denriful/cloud-testapp/master/instal
 
 wget -O - https://raw.githubusercontent.com/Denriful/cloud-testapp/master/install_mongodb.sh | bash
 
-sudo git clone -b monolith https://github.com/express42/reddit.git
+git clone -b monolith https://github.com/express42/reddit.git
 
-sudo cd /reddit && sudo bundle install
+# sudo cd /reddit && sudo bundle install
+
+cd /reddit
+
+sudo bundle install
 
 sudo puma -d
+
+sudo apt install mc
