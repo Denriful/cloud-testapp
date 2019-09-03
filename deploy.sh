@@ -6,6 +6,6 @@ wget -O - https://raw.githubusercontent.com/Denriful/cloud-testapp/master/instal
 
 sudo git clone -b monolith https://github.com/express42/reddit.git
 
-sudo cd reddit && sudo bundle install
+sudo cd /reddit && sudo bundle install
 
 sudo puma -d
