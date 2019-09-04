@@ -10,8 +10,18 @@ git clone -b monolith https://github.com/express42/reddit.git
 
 cd /reddit
 
+touch deploy.log
+
+echo 'current dir after "cd" command: '$PWD > deploy.log
+
 sudo bundle install
+
+echo 'bundle install exit status: '$? >> deploy.log
 
 sudo puma -d
 
+echo 'puma install exit status: '$? >> deploy.log
+
 sudo apt install mc
+
+echo 'mc install exit status: '$? >> deploy.log
